@@ -1,0 +1,5 @@
+package com.klef.ms.sem.entity;
+
+public class Inventory {
+
+}

@@ -1,0 +1,11 @@
+spring.application.name=APIGateway
+
+server.port=1777
+
+eureka.instance.appname=api-gateway-service
+eureka.instance.hostname=localhost
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+
+spring.cloud.gateway.server.webmvc.routes[0].id=
+spring.cloud.gateway.server.webmvc.routes[0].uri=http://localhost:8001
+spring.cloud.gateway.server.webmvc.routes[0].predicates[0]=Path=/user/**
